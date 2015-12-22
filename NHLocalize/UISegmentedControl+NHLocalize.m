@@ -6,25 +6,31 @@
 //  Copyright (c) 2014 Nathan Hegedus. All rights reserved.
 //
 
+
 #import "UISegmentedControl+NHLocalize.h"
+
 
 @implementation UISegmentedControl (NHLocalize)
 
--(NSString *)nhSegment {
-    return self.nhSegment;
+
+- (NSString *)nhlSegment
+{
+    return self.nhlSegment;
 }
 
--(void)setNhSegment:(NSString *)nhSegment{
-    
+
+- (void)setNhlSegment:(NSString *)nhlSegment
+{
     int index;
-    NSRange indexRange = [nhSegment rangeOfString:@"-"];
+    NSRange indexRange = [nhlSegment rangeOfString:@"-"];
 
-    if(indexRange.location != NSNotFound) {
-        index = [[[nhSegment substringFromIndex:indexRange.location] stringByReplacingOccurrencesOfString:@"-" withString:@""] intValue];
+    if (indexRange.location != NSNotFound)
+    {
+        index = [[[nhlSegment substringFromIndex:indexRange.location] stringByReplacingOccurrencesOfString:@"-" withString:@""] intValue];
     }
-    
-    [self setTitle:NSLocalizedString(nhSegment, nil) forSegmentAtIndex:index];
-    
+
+    [self setTitle:NSLocalizedString(nhlSegment, nil) forSegmentAtIndex:index];
 }
+
 
 @end

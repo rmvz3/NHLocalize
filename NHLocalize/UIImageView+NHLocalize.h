@@ -6,10 +6,14 @@
 //  Copyright (c) 2014 Nathan Hegedus. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+
 
 @interface UIImageView (NHLocalize)
 
+
 @property (nonatomic, copy) NSString *nhlImageView;
+
 
 @end

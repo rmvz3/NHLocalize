@@ -6,10 +6,14 @@
 //  Copyright (c) 2014 Nathan Hegedus. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+
 
 @interface UILabel (NHLocalize)
 
+
 @property (nonatomic, copy) NSString *nhlLabel;
+
 
 @end

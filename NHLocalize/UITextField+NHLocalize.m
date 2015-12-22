@@ -6,35 +6,41 @@
 //  Copyright (c) 2014 Nathan Hegedus. All rights reserved.
 //
 
+
 #import "UITextField+NHLocalize.h"
+
 
 @implementation UITextField (NHLocalize)
 
+
 #pragma mark - Localize Text
 
--(NSString *)nhlTextField {
+
+- (NSString *)nhlTextField
+{
     return self.text;
 }
 
--(void)setNhlTextField:(NSString *)nhlTextField{
-    
+
+- (void)setNhlTextField:(NSString *)nhlTextField
+{
     [self setText:NSLocalizedString(nhlTextField, nil)];
-    
 }
 
 
 #pragma mark - Localize Placeholder
 
--(NSString *)nhlTextFieldPlaceholder{
-    
+
+- (NSString *)nhlTextFieldPlaceholder
+{
     return self.placeholder;
-    
 }
 
--(void)setNhlTextFieldPlaceholder:(NSString *)nhlTextFieldPlaceholder{
-    
-    [self setText:NSLocalizedString(nhlTextFieldPlaceholder, nil)];
-    
+
+- (void)setNhlTextFieldPlaceholder:(NSString *)nhlTextFieldPlaceholder
+{
+    [self setPlaceholder:NSLocalizedString(nhlTextFieldPlaceholder, nil)];
 }
+
 
 @end

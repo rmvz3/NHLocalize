@@ -6,11 +6,15 @@
 //  Copyright (c) 2014 Nathan Hegedus. All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
+
 
 @interface UITextField (NHLocalize)
 
+
 @property (nonatomic, copy) NSString *nhlTextField;
 @property (nonatomic, copy) NSString *nhlTextFieldPlaceholder;
+
 
 @end

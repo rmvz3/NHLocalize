@@ -6,20 +6,26 @@
 //  Copyright (c) 2014 Nathan Hegedus. All rights reserved.
 //
 
+
 #import "UILabel+NHLocalize.h"
+
 
 @implementation UILabel (NHLocalize)
 
+
 #pragma mark - Localize Text
 
--(NSString *)nhlLabel {
+
+- (NSString *)nhlLabel
+{
     return self.text;
 }
 
--(void)setNhlLabel:(NSString *)nhlLabel{
-    
-    [self setText:NSLocalizedString(nhlLabel, nil)];
 
+- (void)setNhlLabel:(NSString *)nhlLabel
+{
+    [self setText:NSLocalizedString(nhlLabel, nil)];
 }
+
 
 @end

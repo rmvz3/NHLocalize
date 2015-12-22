@@ -6,21 +6,27 @@
 //  Copyright (c) 2014 Nathan Hegedus. All rights reserved.
 //
 
+
 #import "UIImageView+NHLocalize.h"
+
 
 @implementation UIImageView (NHLocalize)
 
+
 #pragma mark - Localize ImageView
 
--(NSString *)nhlImageView {
+
+- (NSString *)nhlImageView
+{
     return self.nhlImageView;
 }
 
--(void)setNhlImageView:(NSString *)nhlImageView{
-    
+
+- (void)setNhlImageView:(NSString *)nhlImageView
+{
     NSString *imageName = NSLocalizedString(nhlImageView, nil);
     [self setImage:[UIImage imageNamed:imageName]];
-
 }
+
 
 @end
